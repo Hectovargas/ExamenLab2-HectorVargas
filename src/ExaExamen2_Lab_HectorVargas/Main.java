@@ -303,9 +303,12 @@ public class Main extends javax.swing.JFrame {
     }
 
     private void updateText() {
+        if( usersCombo.getSelectedItem()!=null){
         String name = usersCombo.getSelectedItem().toString();
         playerInfoText.setText(psn.playerInfo(name));
-
+        }else{
+            
+        }
     }
     private void usersComboItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_usersComboItemStateChanged
 
